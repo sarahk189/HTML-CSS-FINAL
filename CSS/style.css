@@ -45,6 +45,7 @@ header .container .menu .top-menu .contact-information .content-box {
   border-right: 1px solid #dad9d3;
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  font-weight: 300;
 }
 header .container .menu .top-menu .contact-information .content-box i {
   margin-right: 5px;
