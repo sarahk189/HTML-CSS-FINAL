@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+html, body {
+  color: #191919;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -14,7 +21,6 @@ header .container .menu-bars {
   display: flex;
   align-items: center;
   flex: 1;
-  justify-content: end;
 }
 @media (min-width: 992px) {
   header .container .menu-bars {
@@ -43,19 +49,40 @@ header .container .menu .top-menu .contact-information .content-box {
   margin-right: 30px;
   padding-right: 20px;
   border-right: 1px solid #dad9d3;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
   font-weight: 300;
+  font-size: 13px;
+}
+header .container .menu .top-menu .contact-information .content-box:hover {
+  color: #dad9d3;
+  font-size: 1.1rem;
 }
 header .container .menu .top-menu .contact-information .content-box i {
   margin-right: 5px;
+  font-size: 1.3rem;
 }
 header .container .menu .top-menu .contact-information .content-box.last {
   border-right: none;
 }
-header .container .menu .social.media {
-  margin-right: 0px;
+header .container .menu .top-menu a {
+  padding-right: 12px;
+  color: #191919;
+  font-size: 1.2rem;
+}
+header .container .menu .top-menu a:hover {
+  color: #dad9d3;
+  font-size: 1.5rem;
 }
 header .container .menu .bottom-menu {
   display: flex;
+  padding-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+header .container .menu .bottom-menu .lower-box {
+  padding-right: 31px;
+}
+header .container .menu .bottom-menu .lower-box:hover {
+  color: #dad9d3;
+  font-size: 1.1rem;
 }

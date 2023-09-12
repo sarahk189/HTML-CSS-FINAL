@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
 
+html, body {
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
 
 header {
     background-color: #F0EFE9;
@@ -16,9 +22,7 @@ header {
         display: flex;
         align-items: center;
         flex: 1;
-        justify-content: end;
         
-  
             @media (min-width: 992px){
             display: none;
             }
@@ -46,13 +50,18 @@ header {
                         margin-right: 30px;
                         padding-right: 20px;
                         border-right: 1px solid #dad9d3;
-                        font-family: 'Inter', sans-serif;
-                        font-size: 15px;
                         font-weight: 300;
+                        font-size: 13px;
                         
-                        
+                        &:hover {
+                            color: #dad9d3;
+                            font-size: 1.1rem;
+                        }
+
+
                         i {
                             margin-right: 5px;
+                            font-size: 1.3rem
                         }
 
                         &.last {
@@ -60,14 +69,37 @@ header {
                         }
                     }
                   }
-                }
 
-            .social.media {
-                margin-right: 0px;
+                  a {
+                    padding-right: 12px;
+                    color: #191919;
+                    font-size: 1.2rem;
+
+                    &:hover {
+                        color: #dad9d3;
+                        font-size: 1.5rem;
+                    }
+                }
             }
 
+          
+
             .bottom-menu {
-            display: flex;
+                display: flex;
+                padding-top: 30px;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                                
+                .lower-box {
+                    padding-right: 31px;
+
+                    &:hover {
+                        color: #dad9d3;
+                        font-size: 1.1rem;
+                    }
+                }
+        
             }
         }
   
