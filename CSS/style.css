@@ -1,0 +1,48 @@
+header {
+  background-color: #F0EFE9;
+  padding: 16px;
+  border: 1px solid black;
+}
+header .container {
+  gap: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+header .container .menu-bars {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  display: flex;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
+header .container .menu {
+  font-size: 15;
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
+}
+header .container .menu .top-menu {
+  display: flex;
+}
+header .container .menu .top-menu .contact-information {
+  display: flex;
+}
+header .container .menu .top-menu .contact-information .content-box {
+  padding-right: 20px;
+  margin-right: 20px;
+}
+header .container .menu .social-media {
+  justify-content: end;
+  align-items: end;
+}
+header .container .menu .bottom-menu {
+  display: flex;
+}
