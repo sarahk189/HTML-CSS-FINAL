@@ -1,18 +1,17 @@
 header {
   background-color: #F0EFE9;
   padding: 16px;
-  border: 1px solid black;
 }
 header .container {
   gap: 70px;
   display: flex;
-  justify-content: space-between;
 }
 header .container .menu-bars {
   border: none;
   background-color: transparent;
   font-size: 25px;
   display: flex;
+  align-items: center;
 }
 @media (min-width: 992px) {
   header .container .menu-bars {
@@ -20,7 +19,6 @@ header .container .menu-bars {
   }
 }
 header .container .menu {
-  font-size: 15;
   display: none;
   flex: 1;
 }
@@ -31,6 +29,7 @@ header .container .menu {
 }
 header .container .menu .top-menu {
   display: flex;
+  justify-content: space-between;
 }
 header .container .menu .top-menu .contact-information {
   display: flex;
@@ -39,9 +38,8 @@ header .container .menu .top-menu .contact-information .content-box {
   padding-right: 20px;
   margin-right: 20px;
 }
-header .container .menu .social-media {
-  justify-content: end;
-  align-items: end;
+header .container .menu .social.media {
+  margin-right: 0px;
 }
 header .container .menu .bottom-menu {
   display: flex;
