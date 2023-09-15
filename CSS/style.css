@@ -5,6 +5,14 @@ html, body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 300;
+  line-height: 1.5;
+}
+
+.wrapper-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 .btn-yellow {
@@ -45,6 +53,21 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+}
+
+.section-title {
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.section-title p {
+  color: #f94d1c;
+  margin-bottom: 10px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
 }
 
 header {
@@ -223,4 +246,8 @@ header .container .menu .main-menu .btn-login {
   .showcase .container img {
     display: block;
   }
+}
+
+.project-case .container .section-title {
+  text-align: center;
 }
