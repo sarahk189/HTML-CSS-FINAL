@@ -312,6 +312,26 @@ header {
     }
 }
 
+.partners {
+
+    .container {
+        padding-top: 72px;
+        justify-content: center;
+
+        .rows {
+            justify-content: space-evenly;
+        
+           .brands {
+            font-size: 15px;
+
+            @media (min-width: 768px) {
+                font-size: 36px;
+            }
+           }
+        }
+    }
+}
+
 .project-case {
     .container {
 

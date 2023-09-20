@@ -280,6 +280,22 @@ header .container .menu .main-menu .btn-login {
   }
 }
 
+.partners .container {
+  padding-top: 72px;
+  justify-content: center;
+}
+.partners .container .rows {
+  justify-content: space-evenly;
+}
+.partners .container .rows .brands {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .partners .container .rows .brands {
+    font-size: 36px;
+  }
+}
+
 .project-case .container .section-title {
   text-align: center;
 }
