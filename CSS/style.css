@@ -283,9 +283,11 @@ header .container .menu .main-menu .btn-login {
 .partners .container {
   padding-top: 72px;
   justify-content: center;
+  padding-bottom: 80px;
 }
 .partners .container .rows {
   justify-content: space-evenly;
+  align-items: center;
 }
 .partners .container .rows .brands {
   font-size: 15px;
@@ -294,6 +296,84 @@ header .container .menu .main-menu .btn-login {
   .partners .container .rows .brands {
     font-size: 36px;
   }
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  border: none;
+  padding-top: 10px;
+  border: 1px solid #dad9d3;
+}
+.features .container .section-title {
+  width: 460px;
+  margin-left: 100px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+@media (min-width: 1200px) {
+  .features .container .section-title {
+    text-align: start;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.features .container .section-title h2 {
+  padding-bottom: 40px;
+}
+.features .container .section-title .btn-yellow {
+  margin-top: 40px;
+  padding: 15px 50px;
+}
+@media (min-width: 1200px) {
+  .features .container .section-title .btn-yellow {
+    padding: 15px 170px;
+  }
+}
+.features .container .features-grid {
+  text-align: left;
+  margin: 100px;
+  text-align: left;
+  padding-left: 100px;
+  padding-bottom: 115px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "feature1" "feature2" "feature3" "feature4";
+  -moz-column-gap: 130px;
+       column-gap: 130px;
+  row-gap: 55px;
+}
+@media (min-width: 1200px) {
+  .features .container .features-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "feature1 feature2" "feature3 feature4";
+  }
+}
+.features .container .features-grid i {
+  color: #191919;
+  font-size: 30px;
+  padding-bottom: 28px;
+}
+.features .container .features-grid a {
+  text-decoration: none;
+  text-align: left;
+}
+.features .container .features-grid h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+  text-decoration: none;
+}
+.features .container .features-grid .feature {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #191919;
+  width: 227px;
 }
 
 .project-case .container .section-title {
