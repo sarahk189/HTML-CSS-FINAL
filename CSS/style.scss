@@ -326,10 +326,15 @@ header {
            .brands {
             font-size: 15px;
 
-            @media (min-width: 768px) {
-                font-size: 36px;
+            // fix this!!!!!!
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 36px;
+                }
             }
-           }
         }
     }
 }
@@ -338,6 +343,7 @@ header {
    
     .container {
         padding: 10px;
+        padding-right: 80px;
         border: 1px solid #dad9d3;
         
         .features-grid {
@@ -350,7 +356,7 @@ header {
                                     "feat4";
             align-items: center;
             justify-content: center;
-            gap: 40px;
+            gap: 90px;
           
             @media (min-width: 1200px) {
                 grid-template-areas:    "title feat1 feat2"
@@ -363,8 +369,7 @@ header {
             .section-title {
                 grid-area: title;
                 text-align: center;
-                padding-top: 40px;
-                padding-bottom: 40px;
+                padding-top: 10px;
 
                 @media (min-width: 1200px) {
                     text-align: start;
@@ -377,13 +382,12 @@ header {
                     padding-bottom: 35px;
 
                     @media (min-width: 1200px) {
-                        padding-bottom: 80px;
+                        padding-bottom: 45px;
                         font-size: 30x;
                     }
                 }
         
                 .btn-yellow {
-                    margin-top: 10px;
                     padding: 15px 30px;
                     align-items: center;
                     justify-content: center;
@@ -405,7 +409,7 @@ header {
                 grid-area: feat1;
 
                 @media (min-width: 1200px) {
-                    padding-top: 100px;
+                    padding-top: 110px;
                 }
 
             }
@@ -414,7 +418,7 @@ header {
                 grid-area: feat2;
 
                 @media (min-width: 1200px) {
-                    padding-top: 100px;
+                    padding-top: 110px;
                 }
             }
 
@@ -451,6 +455,10 @@ header {
                     text-align: left;
                     width: 227px;
                 }
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
            
             h3 {
@@ -472,6 +480,192 @@ header {
         }
     }
 }
+
+.about-company {
+
+    .container {
+        padding-top: 122px;
+        padding-left: 150px;
+        padding-bottom: 120px;
+        display: flex;
+   
+        .samantha {
+            position: relative;
+
+            img {
+                position: relative;
+            }
+
+            .samantha-box {
+                padding: 20px;
+                width: 368px;
+                background-color: #BEEBFF;
+
+                .sam-name {
+                    display: flex;
+                    align-items: center;
+
+                    h4 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                    }
+            
+                    .founder-title {
+                        color: #f94d1c;
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin-left: 5px;
+                    }
+                }
+            
+                p {
+                    font-style: italic;
+                    font-size: 16px;
+                    font: 500;
+                }
+            }
+        }
+
+        .section-title {
+            padding-top: 0px;
+            padding-left: 200px;
+
+            .aboutusinfo1 {
+                padding-top: 20px;
+                font-size: 16;
+                line-height: 2.5;
+            }
+            
+            .aboutusinfo2 {
+                font-size: 16;
+                line-height: 2.5;
+                padding-top: 20px;
+            }
+
+            .learn-more-and-film {
+                padding-top: 100px;
+                display: flex;
+                align-items: center;
+
+
+                    .btn-black {
+                        font-weight: 400;
+                    }
+
+                    .film {
+                        display: flex;
+                        align-items: center;
+
+                        .btn-transparent {
+                            padding: 10px;
+                            padding-left: 10px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            padding-right: 12px;
+                            margin-left: 40px;
+                        }
+
+                        .intro-text {
+                            margin-left: 20px;
+                        }
+                        
+                        &:hover {
+                            text-decoration: underline;
+
+                            .btn-transparent{
+                                background-color: #191919;
+                                border: 1px solid #191919;
+                                color: #F0EFE9;
+                            }
+                        }
+                        
+                    }
+                    
+            }
+        }
+    }
+}
+
+.our-services {
+    background-color: #F0EFE9;
+        .container {
+           
+            .section-title {
+                width: 504px;
+                padding-top: 125px;
+                padding-bottom: 50px;
+            }
+        
+            .consulting-grid {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 10px;
+                margin-bottom: 40px;
+
+                .service {
+                    width: 300px;
+                    padding: 50px 30px;
+                    text-align: start;
+                    color: #191919;
+                    background-color: #ffffff;
+                    text-decoration: none;
+
+                    .arrow {
+                        display: inline;
+                        font-size: 16px;
+                        background-color: #191919;
+                        align-items: center;
+                        color:#F0EFE9;  
+                        margin-bottom: 40px;
+                        margin-left: 175px;
+                        border-radius: 50px;
+                        padding-left: 20px;
+                        padding-top: 27px;
+                        padding-bottom: 18px;
+                        padding-right: 18px;
+                    }
+                    
+                    &:hover {
+                        background-color: #F9D783;
+                        .arrow {
+                            background-color: #F0EFE9;
+                            color: #191919;
+                        }
+                    }
+
+                    h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    }
+
+                    i {
+                        font-size: 30px;
+                        padding-bottom: 40px;
+                    }
+
+                    div {
+                        margin-bottom: 30px;
+                        line-height: 2;
+                        font-family: 'Inter', sans-serif;
+                    }
+                }    
+
+                   
+            }
+
+            .btn-transparent {
+                margin-bottom: 125px;
+                padding: 15px 36px;
+                font-weight: 400;
+                font-size: 16px;
+            }
+            
+        }
+}    
+
 
 .project-case {
     .container {
