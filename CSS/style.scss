@@ -94,6 +94,7 @@ html, body {
     p {
         color: #f94d1c;
         margin-bottom: 10px;
+        font-weight: 500;
     }
 
     h2 {
@@ -721,13 +722,83 @@ header {
             }
             
         }
-}    
+}   
+
+.why-choose-us {
+
+    .container {
+        
+        .left-text {
+            width: 430px;
+
+            .section-title {
+                padding-top: 61px;
+                padding-bottom: 50px;
+
+                @media (max-width: 1200px) {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+     
+            .reason {
+                display: flex;
+                align-items: center;
+                line-height: 1.5;
+                padding-bottom: 10px;
+                
+                .circle {
+                    font-size: 60px;
+                    opacity: 0.1;
+                    position: relative;
+                    align-items: center;
+                    top: -9px;
+                }
+
+                .icon {
+                    font-size: 25px;
+                    position: relative;
+                    left: -42px;
+                    top: -8.5px;
+                }
+                
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .right-pictures {
+            width: 0px;
+            height: 0px;
+
+            .offset-background {
+                position: relative;
+                width: 1057px;
+                height: 425px;
+                left: 520px;
+                top: -465px;
+            }
+
+            .two-ladies-helping {
+                position: relative;
+                width: 645px;
+                height: 505px;
+                top: -1050px;
+                left: 636px;
+            }
+        }
+    }
+}
 
 .project-case {
     .container {
 
         .section-title{
             text-align: center;  
+            padding-bottom: 60px;
         }
 
         .project-and-cases {
@@ -786,75 +857,164 @@ header {
     }
 }
 
-.why-choose-us {
+.meet-our-team {
+    background-color: #F9D783;
+
     .container {
-
-        .left-text {
-            width: 447px;
-
-            .section-title {
-                padding-top: 61px;
-                padding-bottom: 50px;
-
-                @media (max-width: 1200px) {
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-     
-            .reason {
-                display: flex;
-                align-items: center;
-                line-height: 1.5;
-                padding-bottom: 47px;
-                
-                .circle {
-                    font-size: 50px;
-                    opacity: 0.1;
-                    position: relative;
-                    align-items: center;
-                    top: -9px;
-                }
-
-                .icon {
-                    font-size: 22px;
-                    position: relative;
-                    left: -35.5px;
-                    top: -10px;
-                }
-                
-                h3 {
-                    font-family: 'DM Sans', sans-serif;
-                    font-weight: 700;
-                    font-size: 22px;
-                }
-            }
-        }
-
-        .positioning {
-            display: none;
-            position: relative;
-
-            @media (min-width: 1200px) {
-            display: block;
-            }
-
-            .block-colour {
-                position: relative;
-                width: 1057px;
-                height: 863px;
-                left: 500px;
-
-            }
-            .two-ladies-helping {
-                position: relative;
-                left: 400px;        
-            }
-        }
         
+        .upper-div-team {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .btn-transparent {
+                font-weight: 400;
+                font-size: 16px;
+                padding: 15px 50px;
+            }
+        }
+
+        .col {
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                padding-top: 33px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+        }
+        .dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            i {
+                padding-top: 30px;
+                padding-left: 15px;
+                padding-bottom: 72px;
+                font-size: 20px;
+            }
+        }
+
     }
-    
 }
+
+.testimonials {
+    background-color: #F9D783;
+    padding-bottom: 116px;
+
+    .container {
+        background-color: #ffffff;
+        padding: 130px;
+
+        .section-title {
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .row {
+            padding-top: 100px;
+            
+            .col {
+                padding: 43px;
+                padding-left: 30px;
+                padding-bottom: 0px;
+
+                p {
+                    padding-top: 30px;
+                    line-height: 1.8;
+                    font-size: 18px;
+                    font-family: 'Inter', sans-serif;
+                }
+
+                .client {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 36px;
+
+                    .pic {
+                        align-items: center;
+                    }
+
+                    .name-title {
+
+                        h3 {
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 700;
+                            font-size: 22px;
+                            padding-left: 18px;
+                        }
+                        
+                        p {
+                            padding-left: 18px;
+                            padding-top: 0px;
+                            color: #f94d1c;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .center-content {
+            padding-top: 90px;
+
+            .btn-black {
+                padding: 15px 37px;
+            }
+        }
+    }
+}
+
+.article-news {
+    .container {
+        .upper-div-news {
+            display: flex;
+            justify-content: space-between;
+            align-items:last baseline;
+        }
+
+        .row {
+
+            .col {
+                padding: 0px;
+
+                .date-square {
+                    width: 56px;
+                    height: 64px;
+                    background-color: #F9D783;
+                    text-align: center;
+                    padding: 10px;
+                    line-height: 1;
+                    position: relative;
+                    top: -210px;
+                    left: 18px;
+
+                    .number {
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                        padding-bottom: 0px;
+                    }
+
+                    .month {
+                        padding-top: 0px;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .searchbox-no-positioning {
     background-color: #f3f3f3;
