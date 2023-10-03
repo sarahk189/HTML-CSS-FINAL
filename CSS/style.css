@@ -427,17 +427,22 @@ header .container .menu .main-menu .btn-login {
   padding: 0;
 }
 
+.about-company {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
 .about-company .container {
   padding-top: 122px;
   padding-left: 150px;
-  padding-bottom: 120px;
   display: flex;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .about-company .container .samantha {
   position: relative;
   display: none;
 }
-@media (min-width: 1800px) {
+@media (min-width: 1200px) {
   .about-company .container .samantha {
     display: block;
   }
@@ -450,6 +455,8 @@ header .container .menu .main-menu .btn-login {
   width: 368px;
   height: 180px;
   background-color: #BEEBFF;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .about-company .container .samantha .samantha-box .sam-name {
   display: flex;
@@ -487,6 +494,8 @@ header .container .menu .main-menu .btn-login {
   text-align: center;
   padding-left: 0px;
   width: auto;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 1200px) {
   .about-company .container .about-company-right {
@@ -500,6 +509,8 @@ header .container .menu .main-menu .btn-login {
   padding-top: 0px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 @media (min-width: 1200px) {
   .about-company .container .about-company-right .section-title {
@@ -752,7 +763,7 @@ header .container .menu .main-menu .btn-login {
 .meet-our-team .container .upper-div-team {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: last baseline;
 }
 .meet-our-team .container .upper-div-team .btn-transparent {
   font-weight: 400;
@@ -840,6 +851,9 @@ header .container .menu .main-menu .btn-login {
   justify-content: space-between;
   align-items: last baseline;
 }
+.article-news .container .upper-div-news .section-title {
+  padding-bottom: 34px;
+}
 .article-news .container .row .col {
   padding: 0px;
 }
@@ -859,11 +873,116 @@ header .container .menu .main-menu .btn-login {
   font-weight: 700;
   font-size: 22px;
   padding-bottom: 0px;
+  padding-top: 7px;
 }
 .article-news .container .row .col .date-square .month {
-  padding-top: 0px;
+  padding-top: 3px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
+}
+.article-news .container .row .col .business {
+  font-size: 16;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+.article-news .container .row .col h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-bottom: 25px;
+}
+.article-news .container .row .col p {
+  font-size: 16;
+  line-height: 1.8;
+}
+.article-news .container .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-news .container .dots i {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-bottom: 90px;
+  font-size: 20px;
+}
+
+.news-updates-signup {
+  background-color: #F0EFE9;
+}
+.news-updates-signup .container {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-updates-signup .container h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.news-updates-signup .container .email-button {
+  display: flex;
+}
+.news-updates-signup .container .email-button .email-signup {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 25px;
+  padding: 10px 10px 5px 15px;
+  font-size: 16px;
+}
+.news-updates-signup .container .email-button .email-signup input {
+  background-color: #ffffff;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+.news-updates-signup .container .email-button .btn-yellow {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #191919;
+  color: #dad9d3;
+  padding-top: 50px;
+}
+footer .container h3 {
+  padding-bottom: 30px;
+}
+footer .container a {
+  color: #dad9d3;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+footer .line {
+  width: 100%;
+  background-color: #6d6d6b;
+  height: 1px;
+}
+footer .container .bottom-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .bottom-footer .social-media {
+  display: flex;
+}
+footer .container .bottom-footer .social-media a {
+  padding-right: 12px;
+  color: #dad9d3;
+  font-size: 1.2rem;
+}
+footer .container .bottom-footer .social-media a:hover {
+  color: #f3f3f3;
 }
 
 .searchbox-no-positioning {
