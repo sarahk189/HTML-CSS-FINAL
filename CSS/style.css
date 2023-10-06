@@ -1503,6 +1503,171 @@ header .container .menu .main-menu .btn-login {
   }
 }
 
+.lets-connect {
+  background-color: #F0EFE9;
+  height: 200px;
+}
+@media (min-width: 992px) {
+  .lets-connect {
+    height: 300px;
+  }
+}
+.lets-connect .section-title {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .lets-connect .section-title {
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .lets-connect .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+.lets-connect .section-title p {
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+.lets-connect .section-title p a {
+  text-decoration: none;
+  color: #191919;
+}
+.lets-connect .section-title p a.active {
+  font-weight: 500;
+}
+.lets-connect .section-title p a:hover::after {
+  content: " ";
+  position: absolute;
+  font-weight: 500;
+}
+.lets-connect .section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .lets-connect .section-title h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1400px) {
+  .lets-connect .section-title h2 {
+    font-size: 45px;
+  }
+}
+.lets-connect .section-title .contact-squiggly {
+  width: 0;
+  height: 0;
+  display: none;
+}
+@media (min-width: 1281px) {
+  .lets-connect .section-title .contact-squiggly {
+    display: inline;
+  }
+}
+.lets-connect .section-title .contact-squiggly img {
+  position: relative;
+  top: -130px;
+  left: -550px;
+  width: 836px;
+}
+
+.contact-grid .container {
+  display: flex;
+  justify-content: left;
+  width: 270px;
+}
+@media (min-width: 280px) {
+  .contact-grid .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-grid .container {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    width: auto;
+  }
+}
+.contact-grid .container .row {
+  gap: 20px;
+  justify-content: center;
+  width: 270px;
+}
+@media (min-width: 1024px) {
+  .contact-grid .container .row {
+    width: auto;
+  }
+}
+.contact-grid .container .row .col {
+  border: 1px solid #dad9d3;
+  display: flex;
+  align-items: top;
+  padding-top: 10px;
+  width: 270px;
+  height: 150px;
+}
+@media (min-width: 1024px) {
+  .contact-grid .container .row .col {
+    width: 420px;
+    height: 206px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+}
+.contact-grid .container .row .col .circle {
+  font-size: 50px;
+  position: relative;
+  padding-right: 10px;
+}
+.contact-grid .container .row .col .icon1 {
+  position: relative;
+  font-size: 19px;
+  top: 23px;
+  left: -43px;
+  color: #F0EFE9;
+}
+.contact-grid .container .row .col .icon2 {
+  position: relative;
+  font-size: 19px;
+  top: 23px;
+  left: -45px;
+  color: #F0EFE9;
+}
+.contact-grid .container .row .col .icon3 {
+  position: relative;
+  font-size: 19px;
+  top: 23px;
+  left: -45px;
+  color: #F0EFE9;
+}
+.contact-grid .container .row .col h3 {
+  font-size: 22px;
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+@media (max-width: 280px) {
+  .contact-grid .container .row .col h3 {
+    width: 270px;
+  }
+}
+.contact-grid .container .row .col p {
+  font-size: 18px;
+  line-height: 0.5;
+}
+@media (max-width: 280px) {
+  .contact-grid .container .row .col p {
+    width: 270px;
+  }
+}
+
 footer {
   background-color: #191919;
   color: #dad9d3;

@@ -1602,6 +1602,178 @@ header {
     }
 }
 
+.lets-connect{
+    background-color: #F0EFE9;
+    height: 200px;
+
+    @media (min-width: 992px){
+        height: 300px;
+        }
+
+    .section-title {
+        padding-top: 70px;
+        padding-bottom: 40px;
+        text-align: center;
+    
+        @media (min-width: 768px) {
+            padding-top: 90px;
+            padding-bottom: 70px;
+        }
+    
+        @media (min-width: 1200px) {
+            padding-top: 120px;
+            padding-bottom: 90px;
+        }
+    
+        p {
+            margin-bottom: 10px;
+            font-weight: 200;
+
+            a{
+                text-decoration: none;
+                color: #191919;
+                
+                &.active {
+                    font-weight: 500;
+                }
+
+                &:hover::after {
+                    content: ' ';
+                    position: absolute;
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        h2 {
+            color:#191919;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+    
+            @media (min-width: 768px) {
+                font-size: 40px;
+            }
+            
+            @media (min-width: 1400px) {
+                font-size: 45px;
+            }
+        }
+        
+        .contact-squiggly {
+            width: 0;
+            height: 0;
+            display: none;
+            
+            @media (min-width: 1281px) {
+                display: inline;
+            }
+
+            img {
+                position: relative;
+                top: -130px;
+                left: -550px;
+                width: 836px;
+            }
+        }
+    }
+}
+
+.contact-grid {
+
+    .container {
+        display: flex;
+        justify-content: left;
+        width: 270px;
+
+        @media (min-width: 280px) {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-top: 120px;
+            margin-bottom: 80px;
+            width: auto;
+        }
+
+        .row {
+            gap: 20px;
+            justify-content: center;
+            width: 270px;
+
+            @media (min-width: 1024px) {
+                width: auto;
+            }
+            
+            .col {
+                border: 1px solid #dad9d3;
+                display: flex;
+                align-items: top;
+                padding-top: 10px;
+                width: 270px;
+                height: 150px;
+
+                    @media (min-width: 1024px) {
+                        width: 420px;
+                        height: 206px;
+                        padding-left: 40px;
+                        padding-top: 40px;
+                    }
+
+                .circle {
+                    font-size: 50px;
+                    position: relative;
+                    padding-right: 10px;
+                }
+
+                .icon1 {
+                    position: relative;
+                    font-size: 19px;
+                    top: 23px;
+                    left: -43px;
+                    color: #F0EFE9;
+                }
+
+                .icon2 {
+                    position: relative;
+                    font-size: 19px;
+                    top: 23px;
+                    left: -45px;
+                    color: #F0EFE9;
+                }
+
+                .icon3 {
+                    position: relative;
+                    font-size: 19px;
+                    top: 23px;
+                    left: -45px;
+                    color: #F0EFE9;
+                }
+
+                h3 {
+                    font-size: 22px;
+                    padding-top: 18px;
+                    padding-bottom: 12px;
+
+                    @media (max-width: 280px) {
+                        width: 270px;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: .5;
+
+                    @media (max-width: 280px) {
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 footer {
     background-color: #191919;
     color: #dad9d3;
