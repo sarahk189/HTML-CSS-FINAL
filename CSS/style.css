@@ -328,7 +328,12 @@ header .container .menu .main-menu .btn-login {
   padding-top: 72px;
   justify-content: center;
   padding-bottom: 80px;
-  height: 240px;
+  height: auto;
+}
+@media (min-width: 1400px) {
+  .partners .container {
+    height: 240px;
+  }
 }
 .partners .container .rows {
   justify-content: space-evenly;

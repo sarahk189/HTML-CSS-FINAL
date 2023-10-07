@@ -363,7 +363,11 @@ header {
         padding-top: 72px;
         justify-content: center;
         padding-bottom: 80px;
-        height: 240px;
+        height: auto;
+
+        @media (min-width: 1400px) {
+            height: 240px;
+        }
 
         .rows {
             justify-content: space-evenly;
