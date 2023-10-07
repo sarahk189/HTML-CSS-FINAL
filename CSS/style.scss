@@ -363,6 +363,7 @@ header {
         padding-top: 72px;
         justify-content: center;
         padding-bottom: 80px;
+        height: 240px;
 
         .rows {
             justify-content: space-evenly;
@@ -371,9 +372,8 @@ header {
            .brands {
             font-size: 15px;
 
-            // fix this!!!!!!
                 &:hover {
-                    text-decoration: underline;
+                    font-size: 10px;
                 }
 
                 @media (min-width: 768px) {
@@ -709,15 +709,15 @@ header {
                                 margin-left: 20px;
                             }
                             
-                            &:hover {
-                                text-decoration: underline;
+                                &:hover {
+                                    text-decoration: underline;
 
-                                .btn-transparent{
-                                    background-color: #191919;
-                                    border: 1px solid #191919;
-                                    color: #F0EFE9;
-                                }
-                            }    
+                                    .btn-transparent{
+                                        background-color: #191919;
+                                        border: 1px solid #191919;
+                                        color: #F0EFE9;
+                                    }
+                                }    
                         }
                 }
             }
@@ -1731,16 +1731,17 @@ header {
                         padding-top: 40px;
                     }
 
-                a {
-                    text-decoration: none;
-                    color: #191919;
-                    display: flex;
-
                     &:hover {
+                        background-color: #f9d783;
                         text-decoration: underline;
                         color: #191919;
                     }
-                }
+
+                    a {
+                        text-decoration: none;
+                        color: #191919;
+                        display: flex;
+                    }
 
                 .circle {
                     font-size: 50px;
@@ -1999,6 +2000,11 @@ footer {
                         flex-direction: column;
                         line-height: 3;
                         width: 164px;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: #ffffff;
+                        }
                     }
                 }
             }
@@ -2064,7 +2070,7 @@ footer {
                     font-size: 1.2rem;
         
                     &:hover {
-                        color: #f3f3f3;
+                        color: #f9d783;
                     }
                 }
             }
