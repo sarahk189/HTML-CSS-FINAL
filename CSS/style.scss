@@ -144,7 +144,6 @@ header {
             @media (min-width: 992px){
             display: none;
             }
-    
         }
 
       .menu {
@@ -1594,10 +1593,21 @@ header {
                 padding-bottom: 10px;
 
                 @media (min-width: 1281px) {
-                    padding-bottom: 0px;
+                    padding-top: 15px;
                     margin-left: 20px;
                 }
             }            
+        }
+        .news-squiggly {
+            position: relative;
+            top: 60px;
+            left: 150px;
+            display: none;
+            
+            @media (min-width: 1620px){
+                display: block;
+            }
+
         }
     }
 }
@@ -1843,8 +1853,8 @@ header {
             }
 
             @media (min-width: 1080px) {
-                margin-left:440px;
-                margin-right:440px;
+                margin-left:140px;
+                margin-right:140px;
             }
         }
 
@@ -2003,6 +2013,7 @@ footer {
             }
 
             img {
+                z-index: 0;
                 position: relative;
                 left:1190px;
                 top: -20px;
@@ -2027,22 +2038,24 @@ footer {
         
         .bottom-footer {
             width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: baseline;
+            height: 80px;
+            display: none;
+            justify-content: space-between;
+            align-items: last baseline;
             
             @media (min-width: 1281px){
-                display: block;
+                display: flex;
             }
 
             .trademark {
-              padding-top: 15px;
+              margin-top: 20px;
+              margin-bottom: 15px;
             }
 
             .social-media {
+                z-index: 1;
                 display: flex;
                 justify-content: end;
-                flex: 1;
                 align-items: center;
 
                 a {
